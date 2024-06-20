@@ -1,0 +1,90 @@
+#root {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+.main {
+  padding: 30px 0;
+  height: 100%;
+}
+
+.sidebar h1 {
+  background: #6d7fccff;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.sidebar {
+  background: #7386d7ff;
+  height: 700px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.sidebar h4 {
+  color: white;
+  font-size: 18px;
+  margin: 20px 10px;
+}
+
+.subitem {
+  color: rgb(141, 141, 141);
+}
+
+.accordion-button {
+  background-color: #6d7fccff !important;
+  border-color: #6d7fccff !important;
+  color: white !important;
+}
+
+.accordion-button svg {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+.accordion-item {
+  border-color: #8891c4 !important;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+#main-content .image-wrapper {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.text-content ul li {
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.text-content ul li span {
+  color: rgb(15, 204, 237);
+  font-weight: 600;
+}
+
+.none {
+  display: none;
+}
