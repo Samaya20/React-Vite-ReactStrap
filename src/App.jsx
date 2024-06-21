@@ -3,6 +3,7 @@ import "./App.css";
 import AccordionItem from "./components/AccordionItems.jsx";
 import Navigation from "./components/Navigation.jsx";
 import Content from "./components/Content.jsx";
+import { createContext, useState } from "react";
 import {
   CiHome,
   CiCircleInfo,
@@ -11,11 +12,17 @@ import {
   CiGrid42,
   CiPhone,
 } from "react-icons/ci";
-import { createContext, useState } from "react";
 
 export const MAIN_CONTEXT = createContext("");
 
 function App() {
+  const [state, setState] = useState(1);
+
+  const values = {
+    state,
+    setState,
+  };
+
   let listItems = [
     {
       id: "0",
@@ -56,13 +63,6 @@ function App() {
   ];
 
   //
-
-  const [state, setState] = useState(1);
-
-  const values = {
-    state,
-    setState,
-  };
 
   return (
     <MAIN_CONTEXT.Provider value={values}>

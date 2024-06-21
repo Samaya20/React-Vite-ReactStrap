@@ -46,7 +46,15 @@ function Navigation(props) {
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Angular</NavLink>
+        <NavLink
+          href="#"
+          onClick={() => {
+            setState(3);
+          }}
+          active={state == 3}
+        >
+          Angular
+        </NavLink>
       </NavItem>
       <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
         <DropdownToggle nav caret>
